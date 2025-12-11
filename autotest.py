@@ -12,7 +12,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 try:
     # Открываем страницу логина 
-    driver.get("http://localhost:5500/lab3.html")  
+    driver.get("file:///home/runner/work/auto-tests-lab/auto-tests-lab/lab3.html")  
 
     # Находим поля ввода логина и пароля
     username_input = driver.find_element(By.ID, "username")  
@@ -41,3 +41,4 @@ try:
 finally:
     # Закрываем браузер
     driver.quit()
+
